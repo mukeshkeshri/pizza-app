@@ -1,0 +1,23 @@
+<menu class="d-flex "  style="flex-wrap: wrap;">
+    
+<% pizzas.forEach(pizza=>{ %>
+     
+     <div class="card px-2 m-4 " style="width: 15rem;">
+        <div style="background-color: rgba(247, 190, 4, 0.507);">
+            <div class="card-title my-3 " style="text-align: center; font-size: 30px;"><%= pizza.name %></div>
+            <img src="<%=pizza.image %>" class="card-img-top" alt="..." style="height:13rem;">
+        </div>
+        
+        <div class="card-body">
+            <h5 class="card-title">
+                <i class="fa fa-inr" style="font-size:24px"></i>
+                <b><%= pizza.price %></b>
+            </h5>
+            <a href="#" class="btn btn-primary">ADD to Cart</a>
+        </div>
+    </div> 
+
+<%});%>
+    
+
+</menu>
